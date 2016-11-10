@@ -1,11 +1,9 @@
-<a ui-sref="home">Home</a> &lt; <span>Categories</span>
-
 <h3>Categories List</h3>
 
 <ul>
   <li ng-repeat="category in $ctrl.categories"
       ui-sref="categories.items({categoryShortName: category.short_name})"
       ui-sref-active="active">
-    {{ category.name }}
+          {{ category.name }}
   </li>
 </ul>
