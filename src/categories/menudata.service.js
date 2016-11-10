@@ -26,9 +26,9 @@ angular.module('data')
       var response = $http({
         method: "GET",
         url: (CategoriesPath + "/menu_items.json"),
-        params: {
-          category: categoryShortName
-        }
+            params: {
+              category: categoryShortName
+            }
       });
 
       return response;
