@@ -1,4 +1,5 @@
-<div>Item name: {{ itemDetail.name }}</div>
-<div>Item quantity: {{ itemDetail.quantity }}</div>
-<div>Item description: {{ itemDetail.description }}</div>
- 
+<div>
+   <p ng-repeat="item in $ctrl.items.menu_items">
+     {{ item.name }}
+   </p>
+ </div>
