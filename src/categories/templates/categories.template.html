@@ -3,7 +3,9 @@
 <h3>Categories List</h3>
 <ul>
   <li ng-repeat="item in $ctrl.categories"
-      ui-sref="mainList.itemDetail({itemId: $index})">
+      ui-sref="categories.name({short_name: $index})"
+      ui-sref="categories.items({categoryShortName: category.short_name})"
+    ui-sref-active="active">
     {{ item.name }}
   </li>
 </ul>
