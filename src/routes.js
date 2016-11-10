@@ -33,7 +33,7 @@
 
         .state('categories.items', {
           url: '/items/{categoryShortName}',
-          templateUrl: './src/categories/templates/items-list.template.html',
+          templateUrl: './src/categories/templates/item-list.template.html',
           controller: 'ItemsController as ctrl',
           resolve: {
             iitems: ['MenuDataService', "$stateParams", function (MenuDataService, $stateParams) {
