@@ -5,7 +5,7 @@
       .controller('CategoriesController', CategoriesController);
 
 
-      CategoriesController.$inject = ["$stateParams", 'categories'];
+      CategoriesController.$inject = ["$stateParams", "categories"];
       function CategoriesController($stateParams, categories) {
           var ctrl = this;
           ctrl.categories = categories.data;
