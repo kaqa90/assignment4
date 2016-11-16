@@ -9,13 +9,12 @@
 </ul>
 -->
 <h2>Menu Categories</h2>
-<ul>
-  <li ng-repeat="category in $ctrl.categories"
+  <a ng-repeat="category in $ctrl.categories"
       ui-sref="categories.items({categoryShortName: category.short_name})"
       ui-sref-active="active">
           {{ category.name }}
-  </li>
-</ul>
+  </a>
+
 <!--
 <button type="button" class="btn btn-sm btn-default btn-category text-uppercase"
     ng-repeat="category in $ctrl.categories"
